@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Async/Await Example</h1>
+
+        <!-- Description Section -->
+        <div class="description">
+            <p>This page demonstrates various asynchronous JavaScript operations using async/await. Below are several actions you can test to see how async functions, promises, and error handling work.</p>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="button-container">
+            <!-- Task 1: Iterating with Async/Await -->
+            <button onclick="iterateWithAsyncAwait([1, 2, 3, 4, 5])">
+                <strong>Iterate with Async/Await</strong>
+                <span class="button-description">Logs each value of the array with a 1-second delay between logs.</span>
+            </button>
+
+            <!-- Task 2: Awaiting a Call (Simulating API Call) -->
+            <button onclick="awaitCall()">
+                <strong>Simulate API Call</strong>
+                <span class="button-description">Simulates an API request and logs the response after a 2-second delay.</span>
+            </button>
+
+            <!-- Task 3: Handling Errors with Async/Await -->
+            <button onclick="awaitCall()">
+                <strong>Handle Errors Gracefully</strong>
+                <span class="button-description">Simulates an API request, catches any errors, and displays a friendly error message if something goes wrong.</span>
+            </button>
+
+            <!-- Task 4: Chaining Async Functions -->
+            <button onclick="chainedAsyncFunctions()">
+                <strong>Chained Async Functions</strong>
+                <span class="button-description">Chains three async functions together, each with a 1-second delay.</span>
+            </button>
+
+            <!-- Task 5: Awaiting Concurrent Requests -->
+            <button onclick="concurrentRequests()">
+                <strong>Concurrent API Requests</strong>
+                <span class="button-description">Makes two API calls concurrently and logs the combined results after both requests are resolved.</span>
+            </button>
+
+            <!-- Task 6: Parallel API Calls -->
+            <button onclick="parallelCalls(['https://api1.com', 'https://api2.com'])">
+                <strong>Parallel API Calls</strong>
+                <span class="button-description">Makes multiple API requests concurrently and logs all responses once all are complete.</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

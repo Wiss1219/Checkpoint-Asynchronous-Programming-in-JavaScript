@@ -1,0 +1,7 @@
+Task 01: iterateWithAsyncAwait iterates over the array, logging each value with a 1-second delay using await and setTimeout.
+Task 02: awaitCall simulates an API call using a Promise and resolves with mock data after 2 seconds. The await ensures it logs the data only after the simulated API request is complete.
+Task 03: awaitCall now catches errors using a try-catch block. If the simulated API fails, it logs an error message.
+Task 04: chainedAsyncFunctions chains three async functions (function1, function2, and function3) that each log a message with a 1-second delay.
+Task 05: concurrentRequests uses Promise.all() to wait for two API calls to complete concurrently and logs the results together once both are finished.
+Task 06: parallelCalls accepts an array of URLs, fetches data from each one concurrently using Promise.all(), and logs all the responses once completed.
+These tasks showcase different ways of using async/await to manage concurrency and handle delays effectively in JavaScript.
